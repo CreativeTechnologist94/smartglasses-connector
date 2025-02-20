@@ -1,5 +1,4 @@
 
-```typescript
 import { useEffect, useState } from 'react';
 import { DeviceInfo, SensorData } from '@/types/device';
 import { ConnectionStatus } from '@/components/ConnectionStatus';
@@ -34,7 +33,7 @@ const Index = () => {
     setIsConnected(true);
     toast({
       title: "Connected",
-      description: `Connected to device at ${hmdIPAddress}`,
+      description: `Connected to device at ${hmdIPAddress}`
     });
 
     // Start sending simulated sensor data
@@ -109,4 +108,3 @@ const Index = () => {
 };
 
 export default Index;
-```
